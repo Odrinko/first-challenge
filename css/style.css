@@ -1,0 +1,189 @@
+:root {
+/* Colors */
+
+/* ### Primary */
+
+--Paleblue: hsl(225, 100%, 94%);
+--Brightblue: hsl(245, 75%, 52%);
+
+/* ### Neutral */
+
+--Verypaleblue: hsl(225, 100%, 98%);
+--Desaturatedblue: hsl(224, 23%, 55%);
+--Darkblue: hsl(223, 47%, 23%);
+
+--fuente: 'Red Hat Display', serif;
+
+/* ## Typography
+
+
+
+### Body Copy */
+
+/* - Font size (paragraph): 16px; */
+
+/* ### Font */
+
+/* - Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+- Weights: 500, 700, 900; */
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--fuente);
+    background-color: var(--Verypaleblue);
+    background-image: url(/images/pattern-background-desktop.svg);;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: contain;
+}
+
+
+
+
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    margin: 5rem auto 0;
+    box-shadow: 0px 18px 22px -8px rgba(35, 61, 204, 0.41);
+    width: 90%;
+    border-radius: 1.5rem;
+}
+
+@media (min-width: 769px) {
+    .tarjeta{
+    width: 30%;
+        }
+}
+
+.tarjeta__imagen{
+    width: 100%;
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.informacion{
+    display: flex;
+    flex-direction: column;
+    background-color:var(--Verypaleblue);
+    border-radius: 0 0 1.5rem 1.5rem;
+}
+
+.informacion__titulo{
+    font-size: 2.4rem;
+    color: var(--Darkblue);
+    font-weight: 900;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.informacion__descripcion{
+    font-size: 1.6rem;
+    color: var(--Desaturatedblue);
+    text-align: center;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    line-height: 2.5rem;
+    font-weight: 500;
+}
+
+.pago{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 20% ;
+}
+
+.pago__icono{
+    margin-right: 1.5rem;
+}
+
+.span{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.titulo{
+    font-size: 1.6rem;
+    font-weight: 900;
+    color:var(--Darkblue);
+}
+
+.precio{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--Desaturatedblue);
+}
+
+.cambiar{
+   text-decoration: none; 
+   color: var(--Brightblue);
+   font-weight: 700;
+   font-size: 1.2rem;
+}
+
+.cambiar:hover{
+    cursor: pointer;
+    color: var(--Desaturatedblue);
+}
+
+.pagar{
+    background-color: var(--Brightblue);
+    border-radius: 1.5rem;
+    color: white;
+    box-shadow: -1px 38px 34px -15px rgba(161,133,148,0.64);
+    border: none;
+    margin: 5rem 10% 0 ;
+    padding: 2rem 0;
+    font-weight: 900;
+    font-size: 1.6rem;
+}
+
+.pagar:hover{
+    cursor: pointer;
+    background-color: var(--Desaturatedblue);
+    border-radius: 1.5rem;
+    color: white;
+    box-shadow: -1px 35px 34px -15px rgba(161,133,148,0.64);
+    border: none;
+    margin: 5rem 10% 0 ;
+    padding: 2rem 0;
+    font-weight: 900;
+    font-size: 1.6rem;
+}
+
+.cancelar{
+    text-decoration: none;
+    color: var(--Desaturatedblue);
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin: 5rem auto;
+}
+
+.cancelar:hover{
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--Darkblue);
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin: 5rem auto;
+}
+
+.attribution{
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 1.6rem;
+}
+
